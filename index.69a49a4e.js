@@ -1,2 +1,0 @@
-!function(){function e(e){var t=e.currentTarget.elements,r=t.taskName,n=t.taskText,a={id:Date.now()};if(r.value&&n.value)return new FormData(e.currentTarget).forEach((function(e,t){a[t]=e})),a;alert("Fill all fields!")}({form:document.querySelector("#task-form"),list:document.querySelector("#task-list")}).form.addEventListener("submit",(function(t){t.preventDefault(),e(t)}))}();
-//# sourceMappingURL=index.69a49a4e.js.map
