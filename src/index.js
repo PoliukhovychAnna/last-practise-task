@@ -4,11 +4,11 @@
  * Після натискання на кнопку "Додати" завдання додається до списку #task-list.
  *
  * Розмітка картки задачі
- * <li class="task-list-item">
- *     <button class="task-list-item-btn">Удалить</button>
- *     <h3>Заголовок</h3>
- *     <p>Текст</p>
- * </li>
+  <li class="task-list-item">
+    <button class="task-list-item-btn">Удалить</button>
+     <h3>Заголовок</h3>
+    <p>Текст</p>
+ </li>
  *
  * У кожної картки має бути кнопка "Видалити", щоб можна було
  * прибрати завдання зі списку.
@@ -17,5 +17,8 @@
 
 import { refs } from "./js/refs";
 import { submitForm } from "./js/submitForm";
+import localStorageAPI from "./js/localStorageAPI";
+import { renderNotes } from "./js/renderNotes";
 
 refs.form.addEventListener("submit", submitForm)
+renderNotes(localStorageAPI.getNotes());
