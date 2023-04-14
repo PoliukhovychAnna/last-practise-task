@@ -1,0 +1,2 @@
+function e(e){const{elements:{taskName:t,taskText:r}}=e.currentTarget,a={id:Date.now()};if(t.value&&r.value)return new FormData(e.currentTarget).forEach(((e,t)=>{a[t]=e})),a;alert("Fill all fields!")}({form:document.querySelector("#task-form"),list:document.querySelector("#task-list")}).form.addEventListener("submit",(function(t){t.preventDefault(),e(t)}));
+//# sourceMappingURL=index.63bfeaf7.js.map
